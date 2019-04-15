@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GC Game Closure Docs: sponsorpay</title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/include/fav.png">
+    <link rel="stylesheet" href="/include/bootstrap.min.css">
+    <link rel="stylesheet" href="/include/prettify.css">
+    <link rel="stylesheet" href="/include/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Puritan:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <meta name="description" content="Documentation for the Game Closure DevKit.">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          
+          <ul class="nav pull-left">
+            <li>
+              <a href="../index.html" id="header-logo-text">
+                <img src="/include/img/logo-text-small.png"> Game Closure Docs
+              </a>
+            </li>
+          </ul>
+
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li><a href="../index.html#quickstart">Quick Start</a></li>
+              <li><a href="../index.html#guides">Guides</a></li>
+              <li><a href="../index.html#examples">Examples</a></li>
+              <li><a href="../native.html">Native</a></li>
+              <li><a href="../guide/contributors.html">Contributors</a></li>
+              <li><a href="../support.html">Support</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="nav-collapse collapse sub-nav">
+            <ul class="nav pull-right">
+              <li><a href="../api/appengine.html">Game Engine</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">UI Components<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="../api/ui-view.html">ui.View</a>
+                    <ul>
+                      <li><a href="../api/ui-view.html#style-object">↪ Styles</a></li>
+                      <li><a href="../api/ui-view.html#events">↪ Events</a></li>
+                      <li><a href="../api/ui-view.html#input-events">↪ Input Events</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../api/ui-text.html">Text</a></li>
+                  <li><a href="../api/ui-text.html#class-ui.textview">ui.TextView</a></li>
+                  <li>
+                    <a href="../api/ui-text.html#class-ui.textpromptview">ui.TextPromptView</a>
+                    <ul>
+                      <li><a href="../api/ui-text.html#events">↪ Events</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../api/ui-text.html#class-ui.texteditview">ui.TextEditView</a>
+                    <ul>
+                      <li><a href="../api/ui-text.html#events-1">↪ Events</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../api/ui-text.html#class-ui.scoreview">ui.ScoreView</a></li>
+                  <!--<li><a href="../api/ui-text.html#class-ui.textinputview">ui.TextInputView</a></li>-->
+                  <li><a href="../api/ui-text.html#class-ui.resource.font">ui.resource.Font</a></li>
+                  <li><a href="../api/ui-images.html">Images</a></li>
+                  <li><a href="../api/ui-images.html#class-ui.imageview">ui.ImageView</a></li>
+                  <li><a href="../api/ui-images.html#class-ui.imagescaleview">ui.ImageScaleView</a></li>
+                  <li><a href="../api/ui-images.html#class-ui.resource.image">ui.resource.Image</a></li>
+                  <li>
+                    <a href="../api/ui-spriteview.html">ui.SpriteView</a>
+                    <ul>
+                      <li><a href="../api/ui-spriteview.html#class-sprite-groups">↪ Sprite Groups</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../api/ui-gestureview.html">ui.GestureView</a></li>
+                  <li class="divider"></li>
+                  <li><a href="../api/ui-color.html">ui.Color</a></li>
+                  <li><a href="../api/ui-filter.html">Filters</a></li>
+                  <li><a href="../api/ui-filter.html#class-ui.filter.filter">ui.filter.Filter</a></li>
+                  <li><a href="../api/ui-filter.html#class-ui.filter.linearaddfilter">ui.filter.LinearAddFilter</a></li>
+                  <li><a href="../api/ui-filter.html#class-ui.filter.multiplyfilter">ui.filter.MultiplyFilter</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">UI Widgets<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="../api/ui-stackview.html">ui.StackView</a>
+                    <ul>
+                      <li><a href="../api/ui-stackview.html#events">↪ Events</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../api/ui-scrollview.html">ui.ScrollView</a>
+                    <ul>
+                      <li><a href="../api/ui-scrollview.html#events">↪ Events</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../api/ui-viewpool.html">ui.ViewPool</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="../api/ui-widget-listview.html">ui.widget.ListView</a>
+                    <ul>
+                      <li><a href="../api/ui-widget-listview.html#class-ui.widget.cellview">↪ ui.widget.CellView</a></li>
+                      <li><a href="../api/ui-widget-listview.html#class-gcdatasource">↪ GCDataSource</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../api/ui-widget-gridview.html">ui.widget.GridView</a></li>
+                  <li>
+                    <a href="../api/ui-widget-buttonview.html">ui.widget.ButtonView</a>
+                    <ul>
+                      <li><a href="../api/ui-widget-buttonview.html#events">↪ Events</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="../api/ui-widget-sliderview.html">ui.widget.SliderView</a>
+                    <ul>
+                      <li><a href="../api/ui-widget-sliderview.html#events">↪ Events</a></li>
+                    </ul>
+                  </li>
+                  <!--<li><a href="../api/ui-widget-spinner.html">ui.widget.Spinner</a></li>-->
+                  <li><a href="../api/ui-widget-toast.html">ui.widget.Toast</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="../api/event.html">Events</a></li>
+                  <li><a href="../api/event.html#class-event.emitter">event.Emitter</a></li>
+                  <li><a href="../api/event.html#class-event.callback">event.Callback</a></li>
+                  <li><a href="../api/event.html#class-event.input.inputevent">event.input.InputEvent</a></li>
+                  <li><a href="../api/event.html#drag-events-event.input.drag">Drag Events</a></li>
+                  <li><a href="../api/event.html#rotation-events">Rotation Events</a></li>
+                  <li><a href="../api/event.html#back-button">Back Button</a></li>
+                </ul>
+              </li>
+              <li><a href="../api/device.html">Device</a></li>
+              <li><a href="../api/animate.html">Animation</a></li>
+              <li><a href="../api/audio.html">Audio</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Utilities<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="../api/utilities.html">Utilities</a></li>
+                  <li><a href="../api/utilities.html#modules">Modules</a>
+                    <ul>
+                      <li><a href="../api/utilities.html#import">↪ import</a></li>
+                      <li><a href="../api/utilities.html#class-name-superconstructor-constructor">↪ Class</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../api/utilities.html#global-object">GLOBAL</a>
+                    <ul>
+                      <li><a href="../api/utilities.html#bind-thisarg-callback-args">↪ bind</a></li>
+                      <li><a href="../api/utilities.html#merge-obj1-obj2-obj3">↪ merge</a></li>
+                      <li><a href="../api/utilities.html#cache">↪ CACHE</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../api/utilities.html#module-util.ajax">util.ajax</a></li>
+                  <li class="divider"></li>
+                  <li><a href="../api/math.html">Math</a></li>
+                  <li><a href="../api/math.html#module-math.util">math.util</a></li>
+                  <li><a href="../api/math.html#module-math.array">math.array</a></li>
+                  <li><a href="../api/math.html#class-math.geom.point">math.geom.Point</a></li>
+                  <li><a href="../api/math.html#class-math.geom.line">math.geom.Line</a></li>
+                  <li><a href="../api/math.html#class-math.geom.circle">math.geom.Circle</a></li>
+                  <li><a href="../api/math.html#class-math.geom.rect">math.geom.Rect</a></li>
+                  <li><a href="../api/math.html#class-math.geom.vec2d">math.geom.Vec2D</a></li>
+                  <li><a href="../api/math.html#module-math.geom.angle">math.geom.angle</a></li>
+                  <li><a href="../api/math.html#module-math.geom.intersect">math.geom.intersect</a></li>
+                </ul>
+              </li>
+              <!-- <li>
+                <form class="navbar-search">
+                  <input type="text" class="search-query" placeholder="Keyword">
+                </form>
+              </li> -->
+            </ul>
+          </div>
+    </div><!--/navbar-->
+
+    <div class="scrollable-content">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <!--sidebar-->
+          <div class="span2">
+            <div id="toc-well" class="well sidebar-nav span2">
+              <!--Sidebar content-->
+              <nav id="toc"><ul>
+<li><a href="#game-closure-devkit-module-sponsorpay-fyber">Game Closure DevKit Module: SponsorPay / Fyber</a><ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#pre-integrated-providers">Pre-Integrated Providers</a></li>
+<li><a href="#integrating-additional-providers">Integrating Additional Providers</a></li>
+<li><a href="#important-notes">Important Notes</a></li>
+<li><a href="#creating-integration-documentation-for-manual-integrations">Creating Integration Documentation for Manual Integrations</a></li>
+<li><a href="#demo-application">Demo Application</a></li>
+</ul></li>
+</ul></nav>
+            </div><!--/.well -->
+          </div><!--/sidebar-->
+          
+          <div class="span10">
+            <div id="main" class="row-fluid">
+<h1 id="game-closure-devkit-module-sponsorpay-fyber">Game Closure DevKit Module: SponsorPay / Fyber</h1>
+<p>This module allows you to display video ads from the <a href="https://fyber.com">Fyber</a>/SponsorPay mediation service.</p>
+<p>Both iOS and Android targets are supported.</p>
+<p>NOTE: requires devkit-core v2.4.0 or later</p>
+<h2 id="installation">Installation</h2>
+<p>Install the module into your application using the standard devkit install process.</p>
+<pre><code>devkit install https://github.com/gameclosure/sponsorpay</code></pre>
+<h2 id="setup">Setup</h2>
+<p>Before you can use SponsorPay/Fyber you must specify your game’s Fyber App ID and Security Token from the Fyber dashboard. Edit the <code>manifest.json</code> “android” and “ios” sections to include <code>sponsorPayAppID</code> and <code>sponsorPaySecurityToken</code> as shown below. You will likely need other changes for each additional provider you select - see the <code>Pre-Integrated Providers</code> section below for details.</p>
+<h4 id="manifest.json">Manifest.json</h4>
+<pre><code>  &quot;android&quot;: {
+    &quot;sponsorPayAppID&quot;: &quot;15085&quot;,
+    &quot;sponsorPaySecurityToken&quot;: &quot;3bd0293059760d7da1e957ea29e61211&quot;
+  },</code></pre>
+<pre><code>  &quot;ios&quot;: {
+    &quot;sponsorPayAppID&quot;: &quot;15085&quot;,
+    &quot;sponsorPaySecurityToken&quot;: &quot;3bd0293059760d7da1e957ea29e61211&quot;
+  },</code></pre>
+<p>You must add all of the providers you wish to bundle with your application to the <code>addons.sponsorpay.&lt;PLATFORM&gt;.providers</code> lists or they will not be included in the build and you will not be able to use them in your game. <sub>~</sub> “addons”: { “sponsorpay”: { “android”: { “providers”: [ “adcolony”, “applovin”, “unityads” ] }, “ios”: { “providers”: [ “adcolony”, “applovin”, “unityads” ] } } } <sub>~</sub></p>
+<p>See the <code>Pre-Integrated Providers</code> section below for a list of working providers you can add to these list.</p>
+<p>Note that the manifest keys are case-sensitive.</p>
+<h4 id="adapters.config">adapters.config</h4>
+<p>Sponsorpay/Fyber uses a local config file (<code>adapters.config</code>) to set up additional providers on android. You will need to download the default adapters.config file for Fyber/SponsorPay version 7.1.0 and enter your credentials for all of the providers you may wish to use. Put this file in your application’s <code>src</code> folder.</p>
+<p>Unlike a standard Fyber integration, this plugin will automatically choose the correct parts of the adapter files and only use those you specify in your manifest, so you can include all of your accounts and not worry about it breaking your build if you add/remove a key in your config.</p>
+<h2 id="usage">Usage</h2>
+<p>To start using SponsorPay/Fyber in your game, first import the sponsorPay object:</p>
+<pre><code>import sponsorpay;</code></pre>
+<p>You should initialize the module before any other functions.</p>
+<pre><code>sponsorpay.initializeSponsorPay();</code></pre>
+<p>If you want fyber/sponsorpay to track users, you can initialize sponsorpay with an object with userId as a property:</p>
+<pre><code>sponsorpay.initializeSponsorPay({
+  userId: &#39;xyz&#39;
+});</code></pre>
+<p>After initialization, sponsorpay will emit an <code>Initialized</code> event. Any time after initialization you can tell Sponsorpay/Fyber to cache a video from one of the ad providers by calling <code>sponsorpay.cacheVideo()</code>. Listen for the <code>VideoAvailable</code> event to be notified when a video ad is available, at which point call <code>sponsorpay.showVideo()</code> to display it.</p>
+<p>This is an overly simple example. Check out the <a href="https://github.com/gameclosure/demoSponsorpay">demo application</a> for a full implementation.</p>
+<pre><code>// if a video is available, show it immediately
+sponsorpay.on(&#39;VideoAvailable&#39;, function () {
+  sponsorpay.showVideo();
+});
+
+// try to cache a video
+sponsorpay.cacheVideo();</code></pre>
+<p>Note: fyber suggests caching videos close to where you are going to display it to the user in order to give the ad providers enough time to fully initialize.</p>
+<h4 id="methods">Methods</h4>
+<ul>
+<li><code>sponsorpay.initializeSponsorPay</code></li>
+<li><code>sponsorpay.cacheVideo</code></li>
+<li><code>sponsorpay.showVideo</code></li>
+</ul>
+<h4 id="events">Events</h4>
+<ul>
+<li><code>Initialized</code></li>
+<li><code>VideoAvailable</code></li>
+<li><code>VideoNotAvailable</code></li>
+<li><code>VideoError</code></li>
+<li><code>VideoCompleted</code></li>
+</ul>
+<h2 id="pre-integrated-providers">Pre-Integrated Providers</h2>
+<p>The Fyber/SponsorPay plugin comes with several ad providers already available in order to make using the plugin as easy as possible.</p>
+<p>Adding one of the included providers is usually as easy as adding the provider name to the manifest <code>addons.sponsorpay.[platform].providers</code> list and adding any necessary SDK keys. The SponsorPay module will use the providers list to automatically create all of your configuration</p>
+<p>For android builds, ensure you have properly included and filled out the <code>adapters.config</code> file in your application’s <code>src</code> folder (see the <code>setup</code> section above for more details).</p>
+<h4 id="unityads">UnityAds</h4>
+<ol type="1">
+<li>Add <code>unityads</code> to the <code>manifest.addons.sponsorpay.&lt;PLATFORM&gt;.providers</code> lists in your manifest.</li>
+<li>Enter your UnityAds credentials in <code>adapters.config</code>.</li>
+</ol>
+<h4 id="applovin">AppLovin</h4>
+<ol type="1">
+<li>Add <code>applovin</code> to the <code>manifest.addons.sponsorpay.&lt;PLATFORM&gt;.providers</code> lists in your manifest.</li>
+<li>Add the <code>android.appLovinSdkID</code> fields to your manifest with the AppLovin SDK ID from the applovin dashboard.</li>
+</ol>
+<h4 id="adcolony">AdColony</h4>
+<ol type="1">
+<li>Add <code>adcolony</code> to the <code>manifest.addons.sponsorpay.&lt;PLATFORM&gt;.providers</code> lists in your manifest.</li>
+<li>Enter your AdColony credentials in <code>adapters.config</code>.</li>
+</ol>
+<h2 id="integrating-additional-providers">Integrating Additional Providers</h2>
+<p>If your desired provider has not been added to the plugin, you’ll need to manually add all of the files and configuration to the correct locations in the build/providers/<provider_name> folder.</p>
+<p>EXTREMELY IMPORTANT - the auto-configuration being done for providers means the standard android and ios folders are deleted before build every time and created as necessary. DO NOT PUT FILES YOU NEED IN THESE FOLDERS (or check out a previous version of the plugin).</p>
+<p>You will likely need a combination of config.json, manifest.xml, manifest.xsl, adapters.config, adapters.info, and various file changes to create a working integration. Follow the existing integrations as a guide and consider contributing your successful integrations back to the project so others can use that provider without additional work.</p>
+<h2 id="important-notes">Important Notes</h2>
+<p>The iOS fyber/sponsorpay sdk requires the <code>-ObjC</code> linker flag added to your xcode project. This is done automatically by the module, but be aware of how it may change your application. <a href="https://developer.apple.com/library/mac/qa/qa1490/_index.html">Read more</a>.</p>
+<p>This requires the latest devkit-core (v2.4.0 or later) to correctly set linker flags and move files into the correct places. If you cannot update your devkit-core, you can manually add the <code>-ObjC</code> flag and move files into your android build folder and xcode project, but be aware of the build process overwriting your changes on new builds.</p>
+<h2 id="creating-integration-documentation-for-manual-integrations">Creating Integration Documentation for Manual Integrations</h2>
+<p>Integrating each network provider can be a little hairy (adding Unity to iOS involved a few more steps than the Fyber or Unity docs included), so detailed start-to-finish integration docs for each network would be fantastic.</p>
+<h2 id="demo-application">Demo Application</h2>
+<p>Check out the <a href="https://github.com/gameclosure/demoSponsorpay">demo application</a> for a full implementation.</p>
+            </div><!--/row-->
+          </div><!--/span-->
+        </div><!--/row-->
+
+        <footer>
+          <p><a href="https://github.com/hashcube">Documentation</a> licensed under the <a href="../guide/license.html">Creative Commons</a></p>
+        </footer>
+
+      </div><!--/.fluid-container-->
+
+      <div id="help-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="help-modal-label" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="help-modal-label">Keyboard Shortcuts</h3>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Shortcut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>?</td>
+                <td>Display Help</td>
+              </tr>
+              <tr>
+                <td>/</td>
+                <td>Keyword Search</td>
+              </tr>
+              <tr>
+                <td>E</td>
+                <td>Go to Examples</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="/include/bootstrap.min.js"></script>
+    <script src="/include/prettify.js"></script>
+    <script src="/include/init.js"></script>
+    <script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.5/zenbox.js"></script>
+    <style type="text/css" media="screen, projection">
+      @import url(//assets.zendesk.com/external/zenbox/v2.5/zenbox.css);
+    </style>
+    <script type="text/javascript">
+      if (typeof(Zenbox) !== "undefined") {
+        Zenbox.init({
+          dropboxID:   "20148148",
+          url:         "https://gcgameclosure.zendesk.com",
+          tabID:       "Comments",
+          tabColor:    "#1e4572",
+          tabPosition: "Right"
+        });
+      }
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31868495-1']);
+      _gaq.push(['_setDomainName', 'gameclosure.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
